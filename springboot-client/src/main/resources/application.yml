@@ -1,0 +1,19 @@
+server:
+  port: 8768
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+spring:
+  application:
+    name: client
+  boot:
+    admin:
+      client:
+        url: http://localhost:8888
